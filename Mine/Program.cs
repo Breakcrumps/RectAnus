@@ -8,7 +8,7 @@ while (true)
     2. Вывести весь."
   );
 
-  string input = Console.ReadLine() ?? "";
+  string? input = Console.ReadLine();
 
   if (!int.TryParse(input, out int number))
     continue;
@@ -17,7 +17,7 @@ while (true)
   {
     Console.WriteLine("1 for rectangle 2 for triangle");
 
-    input = Console.ReadLine() ?? "";
+    input = Console.ReadLine();
 
     if (!int.TryParse(input, out number))
       continue;
@@ -30,6 +30,8 @@ while (true)
   else if (number == 2)
   {
     foreach (Figure figure in figures)
+    {
       figure.Log();
+    }
   }
 }
