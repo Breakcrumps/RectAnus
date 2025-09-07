@@ -5,7 +5,8 @@ while (true)
   Console.WriteLine(
     @"Скажи бля цифру!
     1. Добавить слон в фигурный.
-    2. Вывести весь."
+    2. Вывести весь.
+    3. пися попа"
   );
 
   string? input = Console.ReadLine();
